@@ -1,18 +1,6 @@
 package common.scala.greedyalgo
 
-/**
-  * int length = 0;
-        for (int rope : A) {
-            length += rope;
-            if (length >= K) {
-                result++;
-                length = 0;
-            }
-        }
-        return result;
-  *
-  *
-  */
+
 object TieRope extends App {
 
   /**
@@ -28,7 +16,6 @@ object TieRope extends App {
     var length = 0
 
     a.foreach { r =>
-
       length = length + r
 
       if (length >= k) {
