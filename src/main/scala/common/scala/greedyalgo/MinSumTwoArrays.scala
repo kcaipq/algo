@@ -1,7 +1,30 @@
 package common.scala.greedyalgo
 
 /**
-  * Created by kcai on 29/08/2016.
+  * DP in C ++
+  * int solution(vector<int> &A) {
+    vector<int> P;
+    int min = 20000 ;
+    int dif = 0 ;
+    P.resize(A.size()+1);
+    P[0] = 0;
+    for(int i = 1 ; i < P.size(); i ++)
+    {
+        P[i] = P[i-1]+A[i-1];
+
+    }
+    sort(P.begin(),P.end());
+    for(int i = 1 ; i < P.size(); i++)
+    {
+         dif = P[i]-P[i-1];
+         if(dif<min)
+         {
+             min = dif;
+         }
+    }
+    return min;
+}
+
   */
 object MinSumTwoArrays extends App {
 
