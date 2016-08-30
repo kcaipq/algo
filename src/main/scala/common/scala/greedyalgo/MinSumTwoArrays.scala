@@ -1,4 +1,4 @@
-package common.scala.problems
+package common.scala.greedyalgo
 
 /**
   * Created by kcai on 29/08/2016.
@@ -24,4 +24,6 @@ object MinSumTwoArrays extends App {
 
     minAbs
   }
+
+  println(minAbsSumOfTwo2(Array(1, 5, 2, -2)))
 }

@@ -23,7 +23,7 @@ object SubsetSum extends App {
     if (sum == 0) true
 
     else if (n == 0 && sum != 0) false
-
+      // ignore the one is greater than the sum
     else if (s(n - 1) > sum) solve(s, n - 1, sum)
 
     else solve(s, n - 1, sum) || solve(s, n - 1, sum - s(n - 1))

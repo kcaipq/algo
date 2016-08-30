@@ -52,4 +52,5 @@ object CoinAllPossibleChanges extends App {
 
   println(solve(List(1, 2, 3), 3, 10))
   println(solveDP(List(1, 2, 3), 3, 10))
+  println(solveDP(List(1, 2, 5, 10), 4, 20))
 }

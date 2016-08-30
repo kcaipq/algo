@@ -1,6 +1,7 @@
 package common.scala.problems
 
-import org.scalatest.{Matchers, FunSuite}
+import common.scala.greedyalgo.MinSumTwoArrays
+import org.scalatest.{FunSuite, Matchers}
 
 /**
   * Created by kcai on 26/05/2016.
